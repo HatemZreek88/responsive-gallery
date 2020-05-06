@@ -1,0 +1,51 @@
+/* Resets */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  font-size: 24px;
+  color: #e8ecef;
+  background-color: #0e2431;
+}
+
+/* Layout */
+
+.header {
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px; /*4 x image*/
+}
+
+/* Description */
+
+.description {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+h1 {
+  display: inline-block;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  border-bottom: 4px solid #f4d143;
+}
+
+/* Gallery */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+/* Keep image proportions on resize */
+img {
+  width: 100%;
+  display: block;
+}
